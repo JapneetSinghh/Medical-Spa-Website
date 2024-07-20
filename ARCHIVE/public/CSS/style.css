@@ -274,7 +274,7 @@ a {
 }
 
 #header {
-    background: url(../IMG/1.png) center center/cover no-repeat;
+    background: url(../Img/1.png) center center/cover no-repeat;
     height: calc(100vh - 40px);
     overflow: hidden !important;
     transition: 0.3s all linear;
@@ -475,7 +475,7 @@ a {
 #ownerImage>div:first-child {
     width: 30%;
     background-color: #a94764;
-    background: url(../IMG/laser.jpg) center center/cover no-repeat;
+    background: url(../Img/laser.jpg) center center/cover no-repeat;
 }
 
 #ownerImage>div:last-child {
