@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>
+        <%= pageTitle%>
+    </title>
+</head>
+
+<body>
+
+    <!-- Dashboard Navbar -->
+    <%- include('./dashboardIncludes/dashboardNav.ejs') %>
+
+        <main id="dashboardMain" class="">
+            <!-- Dashboard Sidebar -->
+            <%- include('./dashboardIncludes/sidebar.ejs') %>
+
+                <section id="dashboardContent" style="height: fit-content;">
+                    <div class="dashboardContainer">
+                        <!-- Dashboard Content Start -->
+
+                        <h1 class="pageTitle"><span><a href="/">Home / </a> </span>Dashboard</h1>
+
+                        <!-- Dashboard Content End -->
+
+                        <article id="savedTrucks" class="dashboardContentContainer">
+                            <h2 style="padding: 0; margin-bottom: 0;" class="flexRow spaceBetween alignItemCenter">
+                                Welcome, Rita to Taste On Wheels!
+                            </h2>
+                        </article>
+
+                        <section class="dashboardContentContainer" style=" background-color: white;">
+
+                            <h1 class="heading" style="font-size: 28px;">You have not created any truck yet</h1>
+                        </section>
+
+
+                        
+                    </div>
+
+
+                </section>
+
+        </main>
+
+        <script src="/Js/dashboardSidebar.js"></script>
+
+
+
+</body>
+
+</html>

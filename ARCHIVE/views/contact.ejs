@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>
+        <%= pageTitle%>
+    </title>
+</head>
+
+<body>
+
+
+    <div id="whiteNav">
+        <%- include('./indexIncludes/navbar.ejs') %>
+    </div>
+
+
+    <section id="image60Content40">
+        <div class="image-image60Content40">
+
+        </div>
+        <div class="content-image60Content40">
+            <p class="smallP">
+                CONTACT US
+            </p>
+            <h1>Contact Us Easily Online, by Phone or by Dropping In</h1>
+            <div style="margin-top: 14px;">
+                <a href="" class="btn btnPink">Book Online</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container imageContentFlex" style="margin-top: 80px;">
+        <div id="" style="padding: 25px;" class="content-imageContentFlex">
+            <h1>Contact <br>
+                Information</h1>
+            <p style="font-size: 18px; letter-spacing: 1px; max-width: 90%;">Thank you for visiting our website. We are
+                here to assist you with any inquiries you may have.</p>
+            <br>
+            <div class="flexRow justifySpaceBetween" style="gap: 20px;">
+                <div style="width: 50%;">
+                    <p style="color: #333; font-size: 17px;letter-spacing: 2px;font-family: var(--font);">ADDRESS:</p>
+                    <br>
+                    <p style="font-family: var(--font);">14960 Florence Trail <br>
+                        Apple Valley, MN 55124</p>
+                </div>
+                <div style="width: 50%;">
+                    <p style="color: #333; font-size: 17px;letter-spacing: 2px;font-family: var(--font);">SERVICE TIMES:
+                    </p>
+                    <br>
+                    <p>Saturdays 4 pm <br>
+                        Sundays 9 & 11 am</p>
+                </div>
+            </div>
+            <br>
+            <div class="flexRow justifySpaceBetween" style="gap: 20px;">
+                <div style="width: 50%;">
+                    <p style="color: #333; font-size: 17px;letter-spacing: 2px;font-family: var(--font);">CONTACT NUMBER:</p>
+                    <br>
+                    <p style="font-family: var(--font);">+1 1111 111 111</p>
+                </div>
+                <div style="width: 50%;">
+                    <p style="color: #333; font-size: 17px;letter-spacing: 2px;font-family: var(--font);">EMAIL:
+                    </p>
+                    <br>
+                    <p>pearlandspa@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-imageContentFlex">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92718.07426972609!2d-80.55871624265835!3d43.43052943523942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf48c03ee5105%3A0x9525f8e6df5f544b!2sKitchener%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1715009863823!5m2!1sen!2sin"
+                style="border:0;width: 100%;height:100%" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <%- include('indexIncludes/formHome.ejs')%>
+
+  
+    <br>
+    <br>
+    <%- include('./indexIncludes/footer.ejs') %>
+
+        <script>
+            const questions = document.querySelectorAll('.dropDownQuestion');
+            questions.forEach(question => {
+                question.addEventListener('click', () => {
+                    console.log(question)
+                    question.nextElementSibling.classList.toggle('showAnswer')
+                })
+            })
+        </script>
+</body>
+
+</html>

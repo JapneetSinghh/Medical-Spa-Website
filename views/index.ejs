@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>
+        <%= pageTitle%>
+    </title>
+</head>
+
+<body>
+    <!-- Header Nav Discount, Phone Number, Address -->
+    <%- include('./indexIncludes/headerNav.ejs') %>
+
+        <header id="header">
+            <%- include('./indexIncludes/navbar.ejs') %>
+                <section class="catchyContentCarousel gridCenter textCenter">
+                    <div>
+                        <p>Bespoke Treatments.</p>
+                        <p>Natural Results.</p>
+                        <p style="color: rgb(248, 217, 221)">The Best For You.</p>
+                    </div>
+                </section>
+                <section class="catchyContentCarousel2">
+                    <p>ENHANCE YOUR NATURAL GLOW</p>
+                    <p>Feel Your Best With Advanced <br> Aesthetic Medicine.
+                    </p>
+                </section>
+                <section class="scrollImage" id="catchyContentCarouselImg">
+                    <img class="" style="animation-duration: 1.4s" src="/IMG/7.webp" alt="">
+                    <img src="/IMG/bestServices.svg" alt="">
+                </section>
+                <section class="scrollImage" id="catchyContentCarouselImg2">
+                    <img class="" style="animation-duration: 1.2s;animation-delay: 0.3s;" src="/IMG/8.jpg" alt="">
+                </section>
+        </header>
+
+        <!-- Welcome to our clinic -->
+        <section id="introduction" style="background-color: white; z-index: 3; position: relative;">
+            <div class="container">
+                <div class="flexColumn">
+                    <img style="width: 300px;" src="../IMG/logo.png" alt="">
+                </div>
+                <div>
+                    <p
+                        style="font-size: 18px;text-transform: uppercase;font-family: var(--font);font-weight: 400;margin-bottom: 20px;color: var(--primary-color);">
+                        Welocme to our clinic !</p>
+
+                    <p>We help you be the best version of yourself by delivering bespoke treatment plans featuring the
+                        world's best
+                        beauty products backed by scientific data to ensure natural-looking, gorgeous results.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Perks -->
+        <section class="perks container grid grid400">
+            <div>
+                <i class="fa-solid fa-user-check"></i>
+                <p class="perkName">Safety and hygiene</p>
+                <p class="perkContent">We adhere to the highest grade hygiene standards which minimizes the risk of
+                    complications.</p>
+                <a style="font-size: 16px;" href="/services">Learn More <i a
+                        style="font-size: 16px; transform: rotate(-45deg);" class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cash-register"></i>
+                <p class="perkName">Professional devices</p>
+                <p class="perkContent">You will find state-of-the-art and certified appliances with the best technical
+                    parameters at our clinic.
+                </p>
+                <a style="font-size: 16px;" href="/services">Learn More <i a
+                        style="font-size: 16px; transform: rotate(-45deg);" class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-ranking-star"></i>
+                <p class="perkName">Top-quality products
+                </p>
+                <p class="perkContent">We only use the best and proven preparations and cosmetics which guarantee
+                    effectiveness and safety.
+                </p>
+                <a style="font-size: 16px;" href="/services">Learn More <i a
+                        style="font-size: 16px; transform: rotate(-45deg);" class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="ownerImage">
+            <div>
+
+            </div>
+            <div>
+                <h4 class="smallP">REJUVENATE YOUR LOOK</h4>
+                <h2>Discover Your Path to Your Best Self
+                </h2>
+                <p>Helping you identify the most effective treatments to help you look and feel your best, without
+                    surgery
+                    or
+                    undergoing an invasive procedure.</p>
+                <div>
+                    <a class="btn btnLightPink" href="/">Plan Your Visit</a>
+                </div>
+                <p id="doctorName" style="color: #333; text-transform: uppercase;font-weight: 600;">DR. SERENA MARTIN
+                </p>
+            </div>
+            <div>
+                <div></div>
+                <img class="ownerImage"
+                    src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="">
+            </div>
+        </section>
+
+        <section id="specializingIn" class="flexColumn alignItemsCenter">
+            <div class="container gridCenter">
+                <p class="smallP">Loog good, feel good</p>
+                <h2>Specializing in cosmetic injectables and medical-grade skincare treatments for people who want to
+                    look
+                    and
+                    feel their best.
+                </h2>
+            </div>
+            <div class="specializingInImage">
+                <img src="/Img/speacializedIn.jpg" alt="">
+                <img class="svgImage" src="/IMG/bestServices.svg" alt="">
+            </div>
+        </section>
+        <section style="height: 190px; background-color: white;">
+        </section>
+
+        <section id="popularServices" class="container">
+            <h1 class="headingCenter">
+                Popular Treatments</h1>
+            <br><br>
+            <%- include('./indexIncludes/services.ejs')%>
+                <div style="margin: 60px; text-align: center;">
+                    <a style="font-size: 17px;" class="btn btnLightPink" href="/">View All Services</a>
+                </div>
+        </section>
+
+        <!-- Section 6 Content Image Flex -->
+        <section class="contentImageFlex">
+            <article class="content-contentImageFlex">
+                <p class="smallP">
+                    ENHANCE YOUR NATURAL GLOW
+                </p>
+                <h2>Feel Your Best With Advanced Aesthetic Medicine
+                </h2>
+                <p>We are modern clinic of aesthetic and anti-aging medicine for people who want to enjoy an attractive
+                    appearance for a long time.
+                </p>
+
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Neuromodulators;</li>
+                        <li><i class="fa-solid fa-check"></i>Dermal Fillers;</li>
+                        <li><i class="fa-solid fa-check"></i>Collagen Stimulation;</li>
+                    </ul>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>PDO Threads;</li>
+                        <li><i class="fa-solid fa-check"></i>Body Treatments;</li>
+                        <li><i class="fa-solid fa-check"></i>Laser Technology.</li>
+                    </ul>
+                </div>
+                <section>
+                    <img src="/Img/9.jpg" alt="">
+                    <img src="/Img/6.jpg" alt="">
+                    <img src="/Img/4.jpg" alt="">
+                    <img src="/Img/5.jpg" alt="">
+                </section>
+                <div>
+                    <a class="btn btnLightPink" href="/">Find Out More</a>
+                </div>
+
+            </article>
+            <article class="image-contentImageFlex">
+                <div>
+                    <p>1000+</p>
+                    <p>Happy Customers</p>
+                    <p>across the city</p>
+                </div>
+                <div>
+                    <p>8</p>
+                    <p>Years Of Experience</p>
+                    <p>in the industry</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section 7 Testimonials -->
+        <h1 style="margin-bottom: 0;" class="headingCenter" id="successStories">
+            Success Stories</h1>
+        <p
+            style="text-align: center; font-family: var(--font2);letter-spacing: 1px; color: var(--gray); font-size: 19px;">
+            200+ 5 star Google Reviews</p>
+        <section id="testimonials" class="container grid grid400" style="max-width: 1600px; padding-bottom: 100px;">
+            <article>
+                <div>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="comment">They are very gentle and do their best to give the patients the expected results. I
+                    am
+                    very happy with
+                    their office, equipment, kindness and professionalism.</p>
+                <div>
+                    <img src="/Img/2.jpg" alt="">
+                    <p>Ava D.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="comment">They are very gentle and do their best to give the patients the expected results. I
+                    am
+                    very happy with
+                    their office, equipment, kindness and professionalism.</p>
+                <div>
+                    <img src="/Img/3.jpg" alt="">
+                    <p>Ava D.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="comment">They are very gentle and do their best to give the patients the expected results. I
+                    am
+                    very happy with
+                    their office, equipment, kindness and professionalism.</p>
+                <div>
+                    <img src="/Img/3.jpg" alt="">
+                    <p>Ava D.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="comment">They are very gentle and do their best to give the patients the expected results. I
+                    am
+                    very happy with
+                    their office, equipment, kindness and professionalism.</p>
+                <div>
+                    <img src="/Img/3.jpg" alt="">
+                    <p>Ava D.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="comment">They are very gentle and do their best to give the patients the expected results. I
+                    am
+                    very happy with
+                    their office, equipment, kindness and professionalism.</p>
+                <div>
+                    <img src="/Img/3.jpg" alt="">
+                    <p>Ava D.</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="comment">They are very gentle and do their best to give the patients the expected results. I
+                    am
+                    very happy with
+                    their office, equipment, kindness and professionalism.</p>
+                <div>
+                    <img src="/Img/3.jpg" alt="">
+                    <p>Ava D.</p>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- Carosuel -->
+        <section id="carouselImage">
+            <div>
+                <i class="fa-solid fa-trophy"></i>
+                <p>"Our practice proudly provides high quality cosmetic care in a timely manner. Your safety and comfort
+                    will always be our first priority."</p>
+                <article>
+                    <a style="display: inline-block; margin-top: 18px;" href="" class="btn btnPink">Read More</a>
+                </article>
+            </div>
+        </section>
+        <section class="carouselImageBottom">
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <p>Best Prices</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <p>Best Prices</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <p>Best Prices</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <p>Best Prices</p>
+            </div>
+        </section>
+
+        <!-- Section 8 Form -->
+        <%- include('indexIncludes/formHome.ejs')%>
+
+        <%- include('./indexIncludes/footer.ejs') %>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const imgContainer = document.getElementById('catchyContentCarouselImg');
+                    const header = document.getElementById('header');
+                    const headerHeight = header.offsetHeight;
+                    const imgHeight = imgContainer.offsetHeight;
+                    const initialBottom = 40; // Initial bottom position
+
+                    // Calculate the maximum distance the image should move
+                    const maxDistance = headerHeight - imgHeight;
+
+                    // Set initial bottom position
+                    imgContainer.style.bottom = `${initialBottom}px`;
+
+                    let lastScrollTop = 0;
+
+                    window.addEventListener('scroll', function () {
+                        // Calculate the distance scrolled
+                        const scrollDistance = window.scrollY;
+
+                        // Calculate the scroll direction
+                        const scrollDirection = scrollDistance > lastScrollTop ? 'down' : 'up';
+
+                        // Update last scroll position
+                        lastScrollTop = scrollDistance;
+
+                        // Calculate the translateY value based on scroll direction and position
+                        let translateY = initialBottom;
+
+                        if (scrollDirection === 'down') {
+                            translateY -= Math.min(maxDistance, scrollDistance);
+                        } else {
+                            translateY -= Math.max(0, scrollDistance);
+                        }
+
+                        // Apply the translateY value to the image container
+                        if (translateY > -50) {
+                            imgContainer.style.bottom = `${translateY}px`;
+                        } else {
+                            // imgContainer.style.bottom = `-8px`;
+                        }
+                    });
+                });
+
+            </script>
+</body>
+
+</html>

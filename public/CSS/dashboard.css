@@ -1,0 +1,342 @@
+body{
+    background-color: #f9f9f9
+}
+#dashboardNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 35px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding-left: 330px;
+    transition: padding-left 0.3s linear;
+    height: 75px;
+    /* Only transition the padding-left property */
+}
+
+#dashboardNav img {
+    width: 80px;
+}
+
+#dashboardNav ul li {
+    font-size: 18px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+}
+
+#dashboardNav ul li i {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-left: 8px;
+}
+
+#dashboardMain {
+    display: flex;
+}
+
+#dashboardSidebar {
+    width: 310px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+}
+
+#dashboardContent {
+    background-color: #f9f9f9;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 310px;
+    padding-top: 70px;
+    transition: padding-left 0.3s ease-in-out;
+}
+
+.dashboardContainer {
+    padding: 28px;
+}
+
+.responsiveSidebar #dashboardSidebar {
+    left: -310px;
+}
+
+.responsiveSidebar #dashboardContent {
+    padding-left: 0;
+}
+
+.responsiveSidebar#dashboardNav {
+    padding-left: 35px;
+}
+
+
+.dashboardMenuBtn {
+    background: transparent;
+    font-size: 25px;
+    border: none;
+    margin-left: 25px !important;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    color: var(--primary-color);
+}
+
+.dashboardMenuBtn:hover {
+    color: var(--primary-color);
+}
+
+.dashboardMenuBtn {
+    display: none;
+}
+
+#closeSidebarButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    display: inline-block;
+    color: red;
+    transition: 0.3s all linear;
+}
+
+#closeSidebarButton:hover {
+    color: #333;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width:1100px) {
+    #dashboardNav {
+        padding-left: 20px;
+    }
+
+    #dashboardContent {
+        padding-left: 0;
+    }
+
+    .dashboardMenuBtn {
+        display: contents;
+    }
+
+    .dashboardLogo {
+        display: none;
+    }
+
+    #closeSidebarButton {
+        display: contents;
+    }
+
+    .responsiveSidebar #dashboardSidebar {
+        left: 0;
+    }
+
+    #dashboardSidebar {
+        left: -310px;
+        transition: 0.3s all linear;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    #dashboardNav {
+        padding-left: 340px !important;
+    }
+
+    #closeSidebarButton {
+        display: none;
+    }
+}
+
+.sidebarNav img {
+    width: 200px;
+}
+
+.sidebarNav ul li a {
+    padding: 13px 10px;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.sidebarNav ul li a {
+    border-left: 10px solid transparent;
+}
+
+.sidebarNav ul li a:hover {
+    border-left: 10px solid var(--primary-color);
+    background-color: rgb(249, 240, 249);
+}
+
+.active {
+    border-left: 10px solid var(--primary-color) !important;
+    background-color: rgb(249, 240, 249);
+    color: var(--primary-color);
+}
+
+.sidebarNav ul li i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.sidebarNav {
+    padding: 0px 0;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.sidebarList {
+    width: 100%;
+}
+
+
+#logoutBtn,
+#viewAllBtn {
+    background-color: rgb(213, 35, 35);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+}
+
+#viewAllBtn {
+    padding: 11px 20px;
+    background-color: var(--beige);
+}
+
+#logoutBtn:hover,
+#viewAllBtn:hover {
+    background-color: black;
+}
+
+@media screen and (max-width:700px) {
+    .dashboardContainer {
+        padding: 23px 0;
+    }
+
+    .pageTitle {
+        margin-left: 10px;
+    }
+}
+
+/* Dashboard Content */
+
+.pageTitle {
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--beige);
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.pageTitle span a {
+    color: var(--primary-color);
+}
+
+
+.dashboardContentContainer {
+    background-color: white;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.211) 0px 5px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.dashboardContentContainer h2 {
+    font-family: var(--font);
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 16px;
+    font-size: 30px;
+}
+
+.dashboardContentContainer h2 i {
+    color: var(--primary-color);
+}
+
+/* Add new food truck */
+#addTruckForm {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+#addTruckForm label {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    color: var(--beige);
+    font-family: var(--font);
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 7px;
+}
+
+#addTruckForm input,
+#addTruckForm textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c0c0c0aa;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #4f4e4e;
+    letter-spacing: 2px;
+}
+
+#addTruckForm textarea {
+    height: 200px;
+}
+
+input:focus,textarea:focus {
+    outline: antiquewhite;
+}
+
+select:focus {
+    outline: none;
+}
+
+#addTruckForm input::placeholder ,#addTruckForm textarea::placeholder{
+    color: gainsboro;
+}
+
+.timing {
+    display: flex;
+    gap: 10px;
+
+}
+
+.timing>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timing {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s all linear;
+}
+
